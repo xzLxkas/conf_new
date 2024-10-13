@@ -23,7 +23,8 @@ wget -q https://raw.githubusercontent.com/xzLxkas/update.sh--apt/main/update.sh 
 wait
 echo "${green}Der Download wurde erfolgreich abgeschlossen.${reset}"
 echo "run update.sh"
-
+chmod +x update.sh
+./update.sh
 #install firewall; allow 80 443 22
 
 echo -e "${yellow}Die Firewall wird Herruntergeladen und konfiguriert...${reset}"
