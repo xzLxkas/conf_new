@@ -11,11 +11,13 @@ wait
 echo "${green}Die Pakete wurden erfolgreich installiert.${reset}"
 
 #install ssh puplic key for HCK-NET
+cd .ssh
 echo -e "${yellow}Der Download des Puplic-Keys startet...${reset}"
 wget -q https://raw.githubusercontent.com/xzLxkas/pupssh/main/authorized_keys &
 apt install openssh-server -y > /dev/null 2>&1 &
 wait
 echo "${green}Der Download wurde erfolgreich abgeschlossen.${reset}"
+cd
 
 #download update script
 echo -e "${yellow}Der Download des Update Skripts startet...${reset}"
