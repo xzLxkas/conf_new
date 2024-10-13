@@ -29,6 +29,7 @@ chmod +x update.sh
 #install firewall; allow 80 443 22
 echo -e "${yellow}Die Firewall wird Herruntergeladen und konfiguriert...${reset}"
 apt install ufw -y > /dev/null 2>&1 &
+wait
 ufw enable
 ufw allow 22
 ufw allow 80
