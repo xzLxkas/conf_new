@@ -25,8 +25,8 @@ echo "${green}Der Download wurde erfolgreich abgeschlossen.${reset}"
 echo "run update.sh"
 chmod +x update.sh
 ./update.sh
-#install firewall; allow 80 443 22
 
+#install firewall; allow 80 443 22
 echo -e "${yellow}Die Firewall wird Herruntergeladen und konfiguriert...${reset}"
 apt install ufw -y > /dev/null 2>&1 &
 ufw enable
